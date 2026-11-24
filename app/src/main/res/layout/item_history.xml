@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:layout_marginBottom="7dp"
+    android:background="@drawable/bg_history_card"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <!-- Dynamic Session Icon -->
+    <TextView
+        android:id="@+id/tvSessionIcon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/bg_session_green"
+        android:gravity="center"
+        android:textColor="#10C995"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <!-- Session Details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSessionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#E7EAED"
+            android:textSize="11sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvSessionDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="#87919B"
+            android:textSize="9sp"/>
+
+    </LinearLayout>
+
+    <!-- Dynamic Duration -->
+    <TextView
+        android:id="@+id/tvSessionDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_duration_green"
+        android:gravity="center"
+        android:paddingStart="9dp"
+        android:paddingEnd="9dp"
+        android:textColor="#10C995"
+        android:textSize="9sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
